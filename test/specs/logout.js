@@ -8,14 +8,9 @@ describe('login', () => {
 
         await LoginPage.login('standard_user', 'secret_sauce');
 
-        // Use proper waiting before clicks
-        await InventoryPage.burgerButton.waitForClickable({ timeout: 5000 });
-        await InventoryPage.burgerButton.click();
+        await InventoryPage.logout()
 
-        await InventoryPage.logOutButton.waitForClickable({ timeout: 5000 });
-        await InventoryPage.logOutButton.click();
-
-        // Use toHaveValue for input elements
+        await LoginPage.inputUsername.waitForDisplayed({ timeout: 5000 });
         await expect(LoginPage.inputUsername).toHaveValue('');
         await expect(LoginPage.inputPassword).toHaveValue('');
     });
