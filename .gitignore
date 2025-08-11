@@ -1,1 +1,10 @@
+# Mocha test result output
+mochawesome-report/
+mochawesome*.json
+mochawesome*.html
+
+# Other test-related files
+*.log
+*.out
+coverage/
 node_modules

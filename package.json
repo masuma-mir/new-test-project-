@@ -1,5 +1,5 @@
 {
-  "name": "New test project",
+  "name": "new test project",
   "type": "module",
   "devDependencies": {
     "@wdio/local-runner": "^9.18.4",
