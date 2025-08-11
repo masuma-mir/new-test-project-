@@ -2,7 +2,7 @@ import { $, $$, expect } from '@wdio/globals';
 import page from './page.js';
 
 class inventoryPage extends page {
-    // Selectors
+ 
     get burgerButton() { return $('#react-burger-menu-btn'); }
     get logOutButton() { return $('#logout_sidebar_link'); }
     get addToCart() { return $('#add-to-cart-sauce-labs-bike-light'); }
